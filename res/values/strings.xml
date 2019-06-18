@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">D III ARMORY</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="drawer_open">Characters</string>
+    <string name="drawer_close">III</string>
+    <string name="action_add_chars">Add Chars</string>
+    <string name="about">About</string>
+    <string name="about_text">D III ARMORY is a modern Diablo 3 armory app designed for phones and tablets alike.
+        
+        The app uses the open Diablo 3 REST API provided by Blizzard. This app is UNOFFICIAL and the image resources used in this app are propriety of their respective owners: Blizzard Entertainment®. The app does not come with any images by Blizzard, all images are fetched during runtime and only stored temporarily.
+        
+        D III ARMORY was developed by Marcus Körner.</string>
+    <string name="rate">Rate the App</string>
+    <string name="follow_me">Follow me on:</string>
+    <string name="used_licenses">Used Open Source Components:</string>
+    <string name="like_it">Do you like it?</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Create</string>
+    <string name="create_new_document">Create new Document</string>
+    <string name="write_in_the_cloud">About D III ARMORY</string>
+    <string name="about">About</string>
+
+    <string-array name="servers">
+        <item>us</item>
+        <item>eu</item>
+        <item>kr</item>
+        <item>tw</item>
+    </string-array>
+    <string name="remove_char">Remove Character</string>
+
+</resources>

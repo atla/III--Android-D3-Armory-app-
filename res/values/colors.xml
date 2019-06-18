@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="card_pressed">#7E0099CC</color>
+    <color name="header_button_default">#494949</color>
+    <color name="card_gray">#DEDEDE</color>
+    <color name="hero_barbarian">#FFCC0000</color>
+    <color name="hero_monk">#FFFF8800</color>
+    <color name="hero_demon_hunter">#FF9933CC</color>
+    <color name="hero_witch_doctor">#FF669900</color>
+    <color name="hero_wizard">#FF0099cc</color>
+    <color name="hero_crusader">#FFefefef</color>
+    <color name="hero_unknown">#FF000000</color>
+
+</resources>

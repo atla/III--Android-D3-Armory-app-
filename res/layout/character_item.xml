@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/char_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:padding="16dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Barbarus"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+  <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="lvl 60 Demon-Hunter (HC) - atla#2554"
+        android:textColor="#999"
+        android:textSize="13sp" />
+
+</LinearLayout>

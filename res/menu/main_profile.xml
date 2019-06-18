@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_add_chars"
+        android:orderInCategory="80"
+        android:showAsAction="never"
+        android:title="@string/action_add_chars"/>
+    <item
+        android:id="@+id/remove_char"
+        android:orderInCategory="90"
+        android:showAsAction="never"
+        android:title="@string/remove_char"/>
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/about"/>
+
+</menu>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#eee"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <GridView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/pager_padding"
+        android:paddingRight="@dimen/pager_padding"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"
+        android:divider="#00000000"
+        android:paddingTop="16dp"
+        android:dividerHeight="8dp"
+        android:numColumns="2"
+        android:padding="16dp"
+        android:verticalSpacing="4dp"
+        android:horizontalSpacing="8dp"
+        android:scrollbarStyle="outsideOverlay"
+        tools:listitem="@layout/item_list_item" >
+    </GridView>
+
+</LinearLayout>

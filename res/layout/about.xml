@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/banner_container"
+        android:layout_width="match_parent"
+        android:background="#223"
+        android:layout_height="100dp" >
+        <LinearLayout
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            android:layout_centerVertical="true"
+            android:layout_gravity="center" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:src="@drawable/actionbar_icon" />
+
+            <TextView
+                android:id="@+id/title_label"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center|left"
+                android:shadowColor="#000000"
+                android:textStyle="italic"
+                android:shadowRadius="8"
+                android:text="@string/write_in_the_cloud"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#eee"
+                android:textSize="26sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/about_scroller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/about_data_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/disclaimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="16dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/about_text"
+                android:textColor="#333" />
+
+            <TextView
+                android:id="@+id/like_it"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/like_it"
+                android:textColor="#333" />
+
+            <Button
+                android:id="@+id/rate_clicked"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:drawableLeft="@drawable/ic_action_star_5"
+                android:fontFamily="sans-serif-light"
+                android:onClick="rateClicked"
+                android:padding="8dp"
+                android:text="@string/rate" />
+
+            <TextView
+                android:id="@+id/follow_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/follow_me"
+                android:textColor="#333" />
+
+            <LinearLayout
+                android:id="@+id/social_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/googlep_clicked"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:drawableLeft="@drawable/ic_action_gplus"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="googleClicked"
+                    android:padding="8dp"
+                    android:text="Google+" />
+
+                <Button
+                    android:id="@+id/twitter_clicked"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:drawableLeft="@drawable/ic_action_twitter"
+                    android:fontFamily="sans-serif-light"
+                    android:onClick="twitterClicked"
+                    android:padding="8dp"
+                    android:text="Twitter" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/used_licenses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/used_licenses"
+                android:textColor="#333" />
+
+            <LinearLayout
+                android:id="@+id/license"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:onClick="showOtto"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/license_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Otto (EventBus)" />
+
+                <TextView
+                    android:id="@+id/license_attrib"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="by Square inc."
+                    android:textColor="#888"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/license"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:onClick="showJackson"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/license_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Jackson 2" />
+
+                <TextView
+                    android:id="@+id/license_attrib"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="by Codehaus"
+                    android:textColor="#888"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/license"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:onClick="showOkHttp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/license_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="OkHttp" />
+
+                <TextView
+                    android:id="@+id/license_attrib"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="by Square inc."
+                    android:textColor="#888"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+                 <LinearLayout
+                android:id="@+id/license"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:onClick="showPagerSlidingTabStrip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/license_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="PagerSlidingTabStrip" />
+
+                <TextView
+                    android:id="@+id/license_attrib"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="by Andreas Stuetz"
+                    android:textColor="#888"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/license"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:onClick="showPicasso"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/license_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Picasso" />
+
+                <TextView
+                    android:id="@+id/license_attrib"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="sans-serif-light"
+                    android:text="by Square inc."
+                    android:textColor="#888"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

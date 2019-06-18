@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+            android:paddingBottom="16dp"
+        android:paddingLeft="@dimen/pager_padding"
+        android:paddingRight="@dimen/pager_padding"
+        android:paddingTop="16dp"
+        android:clipToPadding="false"
+    android:scrollbarStyle="outsideOverlay" >
+
+    <LinearLayout
+        android:id="@+id/card_container2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical" >
+
+        <GridLayout
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:columnCount="2"
+            android:isScrollContainer="false"
+            android:padding="16dp"
+            tools:listitem="@layout/stat_grid_item" >
+
+            <!-- HEADER 1 -->
+
+            <TextView
+                android:id="@+id/header1"
+                android:layout_columnSpan="2"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="0dp"
+                android:text="Primary Attributes"
+                android:textAllCaps="true"
+                android:textColor="#999"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Strength"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_strength"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Dexterity"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_dexterity"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Intelligence"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_intelligence"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Armor"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_armor"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Vitality"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_vitality"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+            
+            
+               <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Damage"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_damage"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+
+            <!-- SECTION 2 -->
+
+            <TextView
+                android:id="@+id/header2"
+                android:layout_columnSpan="2"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="16dp"
+                android:text="Offense"
+                android:textAllCaps="true"
+                android:textColor="#999"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Damage Increase"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_damage_increase"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Attack Speed"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_attack_speed"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Critical Hit Chance"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_crit_chance"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Critical Hit Damage"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_crit_damage"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+            <!-- SECTION 3 -->
+
+            <TextView
+                android:id="@+id/header3"
+                android:layout_columnSpan="2"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="16dp"
+                android:text="Defense"
+                android:textAllCaps="true"
+                android:textColor="#999"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+            
+            
+                        <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Block Amount"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_block_amount"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+            
+                        <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Block Chance"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_block_chance"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+            
+                        <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Damage Reduction"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_damage_reduction"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+            
+            
+                         <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Physical Resistance"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_physical_resistance"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+            
+                              <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Cold Resistance"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_cold_resistance"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+                              <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Fire Resistance"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_fire_resistance"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+            
+                              <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Lightning Resistance"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_lightning_resistance"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+            
+            
+                              <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Poison Resistance"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_poison_resistance"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+            
+                              <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Arcane/Holy Resistance"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_arcane_resistance"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+            
+                              <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Thorns"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_thorns"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+            
+            
+            
+            <TextView
+                android:id="@+id/header3"
+                android:layout_columnSpan="2"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="16dp"
+                android:text="Life"
+                android:textAllCaps="true"
+                android:textColor="#999"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+            
+            
+                        <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Maximum Life"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_life"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+            
+                          <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Life Steal"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_life_steal"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+            
+            
+                                  <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Life per Kill"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_life_per_kill"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+            
+                                  <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Life on Hit"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_life_per_hit"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+            
+            <TextView
+                android:id="@+id/header3"
+                android:layout_columnSpan="2"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="16dp"
+                android:text="Adventure"
+                android:textAllCaps="true"
+                android:textColor="#999"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+            
+                                  <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Gold Find"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_gold_find"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+            
+            
+                                  <TextView
+                android:id="@+id/name"
+                android:fontFamily="sans-serif-light"
+                android:gravity="start"
+                android:padding="8dp"
+                android:text="Magic Find"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/stat_magic_find"
+                android:layout_gravity="fill_horizontal"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-light"
+                android:gravity="end"
+                android:padding="8dp"
+                android:text="2700"
+                android:textSize="14sp" />
+            
+        </GridLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:src="@drawable/card_shadow" />
+    </LinearLayout>
+
+</ScrollView>

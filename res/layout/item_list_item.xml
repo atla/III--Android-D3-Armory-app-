@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/card_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff" >
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="60dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="8dp"
+                android:background="#333"
+                android:padding="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/unique_mace_1h_001_104_demonhunter_male" />
+
+            <RelativeLayout
+                android:id="@+id/item_data"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp" >
+
+                <TextView
+                    android:id="@+id/item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="sans-serif-light"
+                    android:text="Echoing Fury"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/item_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/item_name"
+                    android:layout_below="@+id/item_name"
+                    android:fontFamily="sans-serif-light"
+                    android:visibility="gone"
+                    android:text="long lost finally uncovered"
+                    android:textSize="13sp" />
+                
+                
+                <TextView
+                    android:id="@+id/color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/green_bubble"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_marginBottom="8dp"
+                    android:paddingBottom="2dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="2dp"
+                    android:text="Set Item"                    
+                    android:textColor="#000" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:src="@drawable/card_shadow" />
+    </LinearLayout>
+
+</LinearLayout>
